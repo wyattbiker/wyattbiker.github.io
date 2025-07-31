@@ -10,7 +10,9 @@
           color: white;
         }
       </style> -->
-
+      <p>
+        <h1>Hi there, my name is Nikola 👋</h1>
+      </p>  
       <div class="container">
         <h1>Hi there, my name is Nikola 👋</h1>
       </div>
@@ -18,9 +20,7 @@
                       
    </foreignObject>
   
-      <p>
-        <h1>Hi there, my name is Nikola 👋</h1>
-      </p>  
+
   
 <!-- image href="images/image2.png" style="width: 20.00px; height: 18.39px;" -->    
 </svg>
