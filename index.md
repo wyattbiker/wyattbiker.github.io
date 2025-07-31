@@ -3,13 +3,8 @@
 
 <body>
 
-<style>
-h1 {
-  color:  green;
-}
-  </style>
   
-<h1 color="red" align="center">Hello World</h1>
+<h1 style="color: #eee;" align="center">Hello World</h1>
 <p style="color:red" align="center"> I'm hosted with GitHub Pages.</p>
 
 <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
