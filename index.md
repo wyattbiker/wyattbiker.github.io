@@ -2,10 +2,12 @@
 ## test5
 
 <body>
-  
+
+<style>
 h1 {
   color:  green;
 }
+  </style>
   
 <h1 color="red" align="center">Hello World</h1>
 <p style="color:red" align="center"> I'm hosted with GitHub Pages.</p>
