@@ -15,7 +15,7 @@
         <h1>Hi there, my name is Nikola 👋</h1>
       </div>
     </div>
-     <image alt="" src="images/image2.png" style="width: 20.00px; height: 18.39px;" title="">                     
+                      
    </foreignObject>
-
+<image href="images/image2.png" style="width: 20.00px; height: 18.39px;">    
 </svg>
