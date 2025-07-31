@@ -10,7 +10,7 @@
           color: white;
         }
       </style> -->
-<<<<<<< HEAD:hello.md
+
 
       <div class="container">
         <h1>Hi there, my name is Nikola 👋</h1>
@@ -18,27 +18,12 @@
     </div>
 
    </foreignObject>
+
       <p>
         <h1>Hi there, my name is Nikola 👋</h1>
         <image href="https://github.com/wyattbiker/wyattbiker.github.io/blob/main/images/image3.png" style="width: 100.00px; height: 100.39px;" />
       </p>
 
-
 <!-- image href="images/image2.png" style="width: 20.00px; height: 18.39px;" -->
-=======
- 
-      <!-- <div class="container">
-        <h1>Hi there, my name is Nikola !!!👋</h1>
-      </div> -->
 
-      <image href="images/image3.png" style="width: 100.00px; height: 100.39px;" />   
-
-      
-    </div>
-                      
-   </foreignObject>
-
-  
-<!-- image href="images/image2.png" style="width: 20.00px; height: 18.39px;" -->    
->>>>>>> 219222fc485a2afa101cace1a1dad15b5c605ed5:hello.svg
 </svg>
