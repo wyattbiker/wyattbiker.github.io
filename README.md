@@ -1,7 +1,7 @@
 
 <span style="font-family:Helvetica; font-size: 30px;color:red">
 Click below to read the full docs.  
-</span>span>
+</span>
 <center>
 
 # Rsyncback Addon for Godot 4
