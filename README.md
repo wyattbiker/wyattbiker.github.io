@@ -1,5 +1,5 @@
 
-<span style="font-family:Times Roman; font-size: 30px;color:red">
+<span style="font-family:Helvetica; font-size: 30px;color:red">
 Click below to read the full docs.  
 <center>
 
