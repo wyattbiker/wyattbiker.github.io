@@ -1,5 +1,10 @@
 [Finding the rsync command](#finding\ the\ rsync\ command)
 
+<h1 id="#Hello">This is a test</h1>
+
+Then set your `href` to a `#` and then the id
+
+<a href="#Hello">Go to Hello</a>
 
 # Real Cool Heading
 
