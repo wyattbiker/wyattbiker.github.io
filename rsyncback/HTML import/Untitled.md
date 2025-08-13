@@ -8,7 +8,7 @@ test test test
 [XYZ](#real-cool-heading)
 
 
-[](#real-cool)
+[ ](#real-cool)
 
 zxcvcxvzxcv
 
