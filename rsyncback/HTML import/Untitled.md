@@ -1,5 +1,5 @@
 [Finding the rsync command](#finding-the-rsync-command)
-[Real Cool Heading](#real-cool-heading)
+[Real Cool Heading](#real%20cool%20heading)
 
 # Real Cool Heading
 
