@@ -1,11 +1,12 @@
-
+[Finding the rsync command](#finding-the-rsync-command)
+[Real Cool Heading](#real-cool-heading)
 
 # Real Cool Heading
 
 test test test
 
-[Real Cool Heading](#real-cool-heading)
-[XYZ](#real-cool-heading)
+[Real Cool Heading](#real\ cool\ heading)
+[XYZ](#real\ test)
 
 
 [Real Cool Section](#real-cool)
@@ -46,10 +47,11 @@ zxcvzxcvzxcv
 
 zcxvzxcvzxcv
 
+# Real Test
 
 zxcvzxcvzxcvtest test test
 
-
+## Finding the rsync command
 
 
 
@@ -213,6 +215,10 @@ zxcvzxcvzxcv
 
 # Real Cool
 
+
 [Real Cool](#real-cool-heading)
+
+
+
 
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML import/RsyncBackplugindocumentation.md",
+                "file": "HTML import/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RsyncBackplugindocumentation"
+              "title": "Untitled"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 313.5
   },
   "right": {
     "id": "6b0970bd6e3da50c",
@@ -171,14 +171,15 @@
   },
   "active": "05ecb02ad75b9eb0",
   "lastOpenFiles": [
-    "HTML import/Untitled.md",
     "HTML import/RsyncBackplugindocumentation.md",
-    "What is rsync?.md",
+    "HTML import/Untitled.md",
     "HTML import/Attachments/image2.png",
+    "HTML import/Attachments/image1.png",
+    "finding-the-rsync-command.md",
+    "What is rsync?.md",
     "HTML import/Attachments/image5.png",
     "HTML import/Attachments/image4.png",
     "HTML import/Attachments/image3.png",
-    "HTML import/Attachments/image1.png",
     "Welcome.md",
     "HTML import/Attachments",
     "HTML import"
