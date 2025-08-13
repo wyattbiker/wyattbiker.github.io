@@ -7,7 +7,7 @@ test test test
 
 
 [Real Cool Heading](#real-cool-heading)
-[[#Real Vool Heading]]
+[[#Real Cool Heading]]
 
 
 zxcvcxvzxcv
