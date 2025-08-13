@@ -4,7 +4,7 @@
 
 ## <u>Quick Setup and Run RsyncBack</u>
 
-RsyncBack is a plugin addon that allows you to create fast incremental date-stamped backups of your Godot project with a simple click of a button. For more detailed description see [What is rsync?](#what-is-rsync?)
+RsyncBack is a plugin addon that allows you to create fast incremental date-stamped backups of your Godot project with a simple click of a button. For more detailed description see [What is rsync?](#what-is-rsync)
 
 The following is a quick setup and run.
 
