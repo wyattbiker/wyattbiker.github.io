@@ -6,7 +6,7 @@
 test test test
 
 
-[[#real-cool-heading]]
+[Real Cool Heading](#real-cool-heading)
 
 
 zxcvcxvzxcv
