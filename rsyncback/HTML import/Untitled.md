@@ -12,7 +12,7 @@ test test test
 
 zxcvcxvzxcv
 
-![](Attachments/image2.png)
+![Up Arrow](Attachments/image2.png)
 
 zxcvzxcvzcxv
 
