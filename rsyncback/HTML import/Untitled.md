@@ -5,11 +5,12 @@
 
 test test test
 
-
 [Real Cool Heading](#real-cool-heading)
 [XYZ](#real-cool-heading)
 
 
+[Section Real](#real-cool)
+
 zxcvcxvzxcv
 
 
@@ -210,6 +211,6 @@ zcxvzxcvzxcv
 zxcvzxcvzxcv
 
 
-
-[Go to Real Cool Heading section](#real-cool-heading)
+[](#real-cool)
+[Real Cool](#real-cool-heading)
 
