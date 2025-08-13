@@ -6,7 +6,7 @@
 test test test
 
 
-[Real Cool Heading](#real%20cool%20heading)
+
 
 [Real Cool Heading](#real-cool-heading)
 
@@ -224,6 +224,6 @@ zxcvzxcvzxcv
 [Real Cool](#real-cool-heading)
 
 
-
+[Real Cool Heading](#real%20cool%20heading)
 
 
