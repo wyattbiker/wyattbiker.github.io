@@ -5,7 +5,7 @@
 
 test test test
 
-[Real Cool Heading](#real\ cool\ heading)
+[Real Cool Heading](#real-cool-heading)
 [XYZ](#real\ test)
 
 
