@@ -1,4 +1,4 @@
-# ![](HTML%20import/Attachments/image2.png)RsyncBack Godot Plugin Documentation
+# ![](Attachments/image2.png)RsyncBack Godot Plugin Documentation
 
 # For Linux, MacOSX and Windows(*)
 
@@ -10,14 +10,14 @@ The following is a quick setup and run.
 
 1. Download and install the RsyncBack plugin from the Godot AssetLib of your project or clone directly from Github to the ../addons folder of your project.
 2. Enable the RsyncBack plugin in Godot’s Project Settings > Plugins
-3. To start a backup, click on the ![](HTML%20import/Attachments/image2.png)RsyncBack link at the top of the editor to see the main screen. Here you select the rsync executable path, the backup path as well as some other options. The first time, you see a screen similar to Fig 1
+3. To start a backup, click on the ![](Attachments/image2.png)RsyncBack link at the top of the editor to see the main screen. Here you select the rsync executable path, the backup path as well as some other options. The first time, you see a screen similar to Fig 1
 
-![](HTML%20import/Attachments/image4.png)
+![](Attachments/image4.png)
 <p align="center"><b>Fig 1</b></p>
 4. If rsync is installed and in the $PATH environment (usually /usr/local/bin/ or /usr/bin/), the Rsync Cmd Path label will show the path and version. If not you can manually choose it by clicking on Rsync Cmd Path (see the section below [Finding the rsync command](#finding-the-rsync-command)
 5. Click on Backup Destination Path and pick a folder to use for backup. At this point you will see your screen changed similar to **Fig 2**. and the Run Rsync button enabled.
 
-![](HTML%20import/Attachments/image3.png)
+![](Attachments/image3.png)
 <p align="center"><b>Fig 2</b></p>
 
 6. Click on the Exclude File and edit any patterns of files you want to exclude from backup. One line per pattern
@@ -29,13 +29,14 @@ The following is a quick setup and run.
 
 7. To start the backup, click on the Run Rsync button and a popup report will show your project files backed up. The first backup is the longest as the complete project folder is backed up. See example **Fig 3**.
 
-![](HTML%20import/Attachments/image5.png)
+![](Attachments/image5.png)
 <p align="center"><b>Fig 3</b></p>
 8. Click on View Backup Destination Path to review your backup and the log file. You should see the backup folders similar to Fig 4
-9. ![](HTML%20import/Attachments/image1.png)
+
+9. ![](Attachments/image1.png)
 <p align="center"><b>Fig 4</b></p>
 
-10. Go back to editing your project (e.g. clicking on Script). When ready to backup again click on ![](HTML%20import/Attachments/image2.png)RsyncBack link to open the plugin screen and then click the Run Rsync button.  A new report will show only the files that were backed up.
+10. Go back to editing your project (e.g. clicking on Script). When ready to backup again click on ![](Attachments/image2.png)RsyncBack link to open the plugin screen and then click the Run Rsync button.  A new report will show only the files that were backed up.
 
 ## What is rsync?
 
