@@ -8,7 +8,7 @@ test test test
 [XYZ](#real-cool-heading)
 
 
-[Section Real](#real-cool)
+[Section Real](# real-cool)
 
 zxcvcxvzxcv
 
@@ -209,7 +209,7 @@ zcxvzxcvzxcv
 
 zxcvzxcvzxcv
 
-#Real Cool
+# Real Cool
 
 [Real Cool](#real-cool-heading)
 
