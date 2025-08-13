@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML import/RsyncBackplugindocumentation.md",
+                "file": "HTML import/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RsyncBackplugindocumentation"
+              "title": "Untitled"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#real-cool-heading",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -171,8 +172,9 @@
   },
   "active": "05ecb02ad75b9eb0",
   "lastOpenFiles": [
-    "What is rsync?.md",
     "HTML import/RsyncBackplugindocumentation.md",
+    "HTML import/Untitled.md",
+    "What is rsync?.md",
     "HTML import/Attachments/image2.png",
     "HTML import/Attachments/image5.png",
     "HTML import/Attachments/image4.png",
