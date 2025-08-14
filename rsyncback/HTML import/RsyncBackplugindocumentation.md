@@ -48,25 +48,23 @@ The main usage for RsyncBack plugin is to be a Godot GUI front end and to make 
 
 ## Finding the rsync command
 
-Before you begin, check that rsync is installed on your system. You can easily check from the command line by running the following terminal commands:  $ which rsync to show you the default path or $ whereis rsync to check if there are more than one installed. RsyncBack requires version 3.2.4 or above. See Fig A1. To choose the desired rsync path, click on the label Rsync Cmd Path
+Before you begin, check that rsync is installed on your system. You can easily check from the command line by running the following terminal commands:  <strong>which rsync</strong> to show you the default path or <b>whereis rsync</b> to check if there are more than one installed. RsyncBack requires version 3.2.4 or above. See example below. To choose the desired rsync path, click on the label Rsync Cmd Path
 
-~$ which rsync
-
+<b>~$ `which rsync`</b></br>
 /usr/local/bin/rsync
 
-~$ rsync -V
+or
 
-rsync  version 3.2.7  protocol version 31
-
-Copyright (C) 1996-2022 by Andrew Tridgell, Wayne Davison, and others.
-
-.......
-
-~$ whereis rsync
-
+<b>~$ `whereis rsync`</b></br>
 rsync: /usr/bin/rsync /usr/local/bin/rsync /usr/share/rsync /usr/share/man/man1/rsync.1.gz
 
-Fig A1
+<b>~$ `rsync -V`</b></br>
+rsync  version 3.2.7  protocol version 31
+<br>Copyright (C) 1996-2022 by Andrew Tridgell, Wayne Davison, and others.
+</br>.......
+
+
+
 
 ## **For Windows Users: Installing and running the rsync command.
 
@@ -84,13 +82,13 @@ This will create a native windows folder followed by the path to Linux exe  com
 
 You can then install rsync from the terminal that opens up as follows:
 
-rsync.exe can be installed via
+rsync.exe can be installed via:
 
-pacman -S rsync
+```pacman -S rsync```
 
-It then runs natively under Windows as
+It then runs natively under Windows as:
 
-c:/msys64/usr/bin/rsync.exe
+```c:/msys64/usr/bin/rsync.exe```
 
 So in this case, you would choose the path above the RsyncBack screen as the path for rsync.
 
@@ -122,45 +120,30 @@ Hover over each of the config.tres properties and read the tooltip for more info
 
 It looks similar to this:
 
-{dry_run_argument} -avih --mkpath --stats  \
-
+<strong>{dry_run_argument} -avih --mkpath --stats  \
  --out-format="%M %15'l %5f"  \
-
  --exclude-from="{exclude_file_path}" \
-
  --link-dest="{dest_path}/{project_name}/{prev_backup}" \
-
  --log-file-format="%M %15'l %5f" \
-
  --log-file="{log_file_path}/{current_datetime}{log_file_suffix}" \
-
  "{source_path}" \
-
- "{dest_path}/{project_name}/{current_datetime}"
+ "{dest_path}/{project_name}/{current_datetime}"</strong>
 
 The curlies {} are properties replaced by RsyncBack when you run the project. In effect the above becomes something like this command which is what executes.
 
-/usr/local/bin/rsync  -avih --mkpath --stats  \
-
+<strong>/usr/local/bin/rsync  -avih --mkpath --stats  \
  --out-format="%M %15'l %5f"  \
-
  --exclude-from="/home/user1/godot/tps-demo/addons/rsyncback/exclude.txt" \
-
  --link-dest="/home/user1/myback/tps-demo-rsync/[2024-10-16][13_22_37]" \
-
  --log-file-format="%M %15'l %5f" \
-
  --log-file="/home/user1/myback/tps-demo-rsync/logfiles/[2024-10-18][17_07_35]_log.txt" \
-
  "/home/user1/godot/tps-demo/" \
-
  "/home/user1/myback/tps-demo-rsync/[2024-10-18][17_07_35]"
+</strong>
 
 In fact you will see this command in the Rsync Command window. You can click and copy it to the clipboard and run it directly in the command line if you wish!
 
-Notice the rsync command is added from the path you chose. Also {dry_run_argument} 
-
-Is not used in this case since we didn’t check the box. Dry run does not make a backup but simply executes to see if your command is ok. It is always reset back.
+Notice the rsync command is added from the path you chose. Also <em>{dry_run_argument}</em> is not used in this case since we didn’t check the box. Dry run does not make a backup but simply executes to see if your command is ok. It is always reset back.
 
 You can modify this template anyway you want. E.g. add a remote backup ssh keyfile or add –delete option. Study up on rsync if you plan to customize the template.
 
@@ -174,4 +157,4 @@ You can modify this template anyway you want. E.g. add a remote backup ssh keyfi
 |rsync incremental and hard links backup concepts|[https://digitalis.io/blog/linux/incremental-backups-with-rsync-and-hard-links/](https://www.google.com/url?q=https://digitalis.io/blog/linux/incremental-backups-with-rsync-and-hard-links/&sa=D&source=editors&ust=1752710978314098&usg=AOvVaw07zz477f_5QuOstVr4SzCb)|
 |Installing rsync for Windows.|[https://www.msys2.org/](https://www.google.com/url?q=https://www.msys2.org/&sa=D&source=editors&ust=1752710978314618&usg=AOvVaw0Mjlx0uL2EENfNgSCe6qRc)|
 
-Page
+
