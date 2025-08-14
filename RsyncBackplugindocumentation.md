@@ -1,23 +1,23 @@
-# ![](HTML%20import/Attachments/image2.png)RsyncBack Godot Plugin Documentation
+# ![](Attachments/image2.png)RsyncBack Godot Plugin Documentation
 
 # For Linux, MacOSX and Windows(*)
 
 ## <u>Quick Setup and Run RsyncBack</u>
 
-RsyncBack is a plugin addon that allows you to create fast incremental date-stamped backups of your Godot project with a simple click of a button. For more detailed description see [#What is rsync?]
+RsyncBack is a plugin addon that allows you to create fast incremental date-stamped backups of your Godot project with a simple click of a button. For more detailed description see [What is rsync?](#what-is-rsync)
 
 The following is a quick setup and run.
 
 1. Download and install the RsyncBack plugin from the Godot AssetLib of your project or clone directly from Github to the ../addons folder of your project.
 2. Enable the RsyncBack plugin in Godot’s Project Settings > Plugins
-3. To start a backup, click on the ![](HTML%20import/Attachments/image2.png)RsyncBack link at the top of the editor to see the main screen. Here you select the rsync executable path, the backup path as well as some other options. The first time, you see a screen similar to Fig 1
+3. To start a backup, click on the ![](Attachments/image2.png)RsyncBack link at the top of the editor to see the main screen. Here you select the rsync executable path, the backup path as well as some other options. The first time, you see a screen similar to Fig 1
 
-![](HTML%20import/Attachments/image4.png)
+![](Attachments/image4.png)
 <p align="center"><b>Fig 1</b></p>
-4. If rsync is installed and in the $PATH environment (usually /usr/local/bin/ or /usr/bin/), the Rsync Cmd Path label will show the path and version. If not you can manually choose it by clicking on Rsync Cmd Path (see the section below [[#Finding the rsync command|Finding the rsync command,]])
+4. If rsync is installed and in the $PATH environment (usually /usr/local/bin/ or /usr/bin/), the Rsync Cmd Path label will show the path and version. If not you can manually choose it by clicking on Rsync Cmd Path (see the section below [Finding the rsync command](#finding-the-rsync-command)
 5. Click on Backup Destination Path and pick a folder to use for backup. At this point you will see your screen changed similar to **Fig 2**. and the Run Rsync button enabled.
 
-![](HTML%20import/Attachments/image3.png)
+![](Attachments/image3.png)
 <p align="center"><b>Fig 2</b></p>
 
 6. Click on the Exclude File and edit any patterns of files you want to exclude from backup. One line per pattern
@@ -29,13 +29,14 @@ The following is a quick setup and run.
 
 7. To start the backup, click on the Run Rsync button and a popup report will show your project files backed up. The first backup is the longest as the complete project folder is backed up. See example **Fig 3**.
 
-![](HTML%20import/Attachments/image5.png)
+![](Attachments/image5.png)
 <p align="center"><b>Fig 3</b></p>
 8. Click on View Backup Destination Path to review your backup and the log file. You should see the backup folders similar to Fig 4
-9. ![](HTML%20import/Attachments/image1.png)
+
+9. ![](Attachments/image1.png)
 <p align="center"><b>Fig 4</b></p>
 
-10. Go back to editing your project (e.g. clicking on Script). When ready to backup again click on ![](HTML%20import/Attachments/image2.png)RsyncBack link to open the plugin screen and then click the Run Rsync button.  A new report will show only the files that were backed up.
+10. Go back to editing your project (e.g. clicking on Script). When ready to backup again click on ![](Attachments/image2.png)RsyncBack link to open the plugin screen and then click the Run Rsync button.  A new report will show only the files that were backed up.
 
 ## What is rsync?
 
@@ -43,29 +44,27 @@ Rsync is one of the most popular and stable open source backup tools included 
 
 ## What is the purpose of the RsyncBack plugin.
 
-The main usage for RsyncBack plugin is to be a Godot GUI front end and to make it simple to quickly setup and incrementally backup your project. Once installed and configured, the plugin can be run with just the press of a button to make date-stamped incremental backups of your project source files. Each date-stamped backup is its own folder, having the name [YYYY-MM-DD[HH-MM-SS]. In addition, it saves storage, because the destination will not contain files that have not been modified but rather a hardlink to the last one modified. When you look or use any of the backup folders, it will look like a complete backup of your source. More on this later.
+The main usage for RsyncBack plugin is to be a Godot GUI front end and to make it simple to quickly setup and incrementally backup your project. Once installed and configured, the plugin can be run with just the press of a button to make date-stamped incremental backups of your project source files. Each date-stamped backup is its own folder, having the name `[YYYY-MM-DD][HH-MM-SS]`. In addition, it saves storage, because the destination will not contain files that have not been modified but rather a hardlink to the last one modified. When you look or use any of the backup folders, it will look like a complete backup of your source. More on this later.
 
 ## Finding the rsync command
 
-Before you begin, check that rsync is installed on your system. You can easily check from the command line by running the following terminal commands:  $ which rsync to show you the default path or $ whereis rsync to check if there are more than one installed. RsyncBack requires version 3.2.4 or above. See Fig A1. To choose the desired rsync path, click on the label Rsync Cmd Path
+Before you begin, check that rsync is installed on your system. You can easily check from the command line by running the following terminal commands:  <strong>which rsync</strong> to show you the default path or <b>whereis rsync</b> to check if there are more than one installed. RsyncBack requires version 3.2.4 or above. See example below. To choose the desired rsync path, click on the label Rsync Cmd Path
 
-~$ which rsync
-
+<b>~$ `which rsync`</b></br>
 /usr/local/bin/rsync
 
-~$ rsync -V
+or
 
-rsync  version 3.2.7  protocol version 31
-
-Copyright (C) 1996-2022 by Andrew Tridgell, Wayne Davison, and others.
-
-.......
-
-~$ whereis rsync
-
+<b>~$ `whereis rsync`</b></br>
 rsync: /usr/bin/rsync /usr/local/bin/rsync /usr/share/rsync /usr/share/man/man1/rsync.1.gz
 
-Fig A1
+<b>~$ `rsync -V`</b></br>
+rsync  version 3.2.7  protocol version 31
+<br>Copyright (C) 1996-2022 by Andrew Tridgell, Wayne Davison, and others.
+</br>.......
+
+
+
 
 ## **For Windows Users: Installing and running the rsync command.
 
@@ -83,13 +82,13 @@ This will create a native windows folder followed by the path to Linux exe  com
 
 You can then install rsync from the terminal that opens up as follows:
 
-rsync.exe can be installed via
+rsync.exe can be installed via:
 
-pacman -S rsync
+```pacman -S rsync```
 
-It then runs natively under Windows as
+It then runs natively under Windows as:
 
-c:/msys64/usr/bin/rsync.exe
+```c:/msys64/usr/bin/rsync.exe```
 
 So in this case, you would choose the path above the RsyncBack screen as the path for rsync.
 
@@ -121,45 +120,30 @@ Hover over each of the config.tres properties and read the tooltip for more info
 
 It looks similar to this:
 
-{dry_run_argument} -avih --mkpath --stats  \
-
+<strong>{dry_run_argument} -avih --mkpath --stats  \
  --out-format="%M %15'l %5f"  \
-
  --exclude-from="{exclude_file_path}" \
-
  --link-dest="{dest_path}/{project_name}/{prev_backup}" \
-
  --log-file-format="%M %15'l %5f" \
-
  --log-file="{log_file_path}/{current_datetime}{log_file_suffix}" \
-
  "{source_path}" \
-
- "{dest_path}/{project_name}/{current_datetime}"
+ "{dest_path}/{project_name}/{current_datetime}"</strong>
 
 The curlies {} are properties replaced by RsyncBack when you run the project. In effect the above becomes something like this command which is what executes.
 
-/usr/local/bin/rsync  -avih --mkpath --stats  \
-
+<strong>/usr/local/bin/rsync  -avih --mkpath --stats  \
  --out-format="%M %15'l %5f"  \
-
  --exclude-from="/home/user1/godot/tps-demo/addons/rsyncback/exclude.txt" \
-
  --link-dest="/home/user1/myback/tps-demo-rsync/[2024-10-16][13_22_37]" \
-
  --log-file-format="%M %15'l %5f" \
-
  --log-file="/home/user1/myback/tps-demo-rsync/logfiles/[2024-10-18][17_07_35]_log.txt" \
-
  "/home/user1/godot/tps-demo/" \
-
  "/home/user1/myback/tps-demo-rsync/[2024-10-18][17_07_35]"
+</strong>
 
 In fact you will see this command in the Rsync Command window. You can click and copy it to the clipboard and run it directly in the command line if you wish!
 
-Notice the rsync command is added from the path you chose. Also {dry_run_argument} 
-
-Is not used in this case since we didn’t check the box. Dry run does not make a backup but simply executes to see if your command is ok. It is always reset back.
+Notice the rsync command is added from the path you chose. Also <em>{dry_run_argument}</em> is not used in this case since we didn’t check the box. Dry run does not make a backup but simply executes to see if your command is ok. It is always reset back.
 
 You can modify this template anyway you want. E.g. add a remote backup ssh keyfile or add –delete option. Study up on rsync if you plan to customize the template.
 
@@ -173,4 +157,4 @@ You can modify this template anyway you want. E.g. add a remote backup ssh keyfi
 |rsync incremental and hard links backup concepts|[https://digitalis.io/blog/linux/incremental-backups-with-rsync-and-hard-links/](https://www.google.com/url?q=https://digitalis.io/blog/linux/incremental-backups-with-rsync-and-hard-links/&sa=D&source=editors&ust=1752710978314098&usg=AOvVaw07zz477f_5QuOstVr4SzCb)|
 |Installing rsync for Windows.|[https://www.msys2.org/](https://www.google.com/url?q=https://www.msys2.org/&sa=D&source=editors&ust=1752710978314618&usg=AOvVaw0Mjlx0uL2EENfNgSCe6qRc)|
 
-Page
+
